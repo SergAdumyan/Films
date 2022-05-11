@@ -1,0 +1,16 @@
+.menuBlockIcons{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.menuBlockIcons>a>img{
+    width: 30px;
+    height: 30px;
+}
+.menuBlockIcons>a{
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #3B486D;
+}
