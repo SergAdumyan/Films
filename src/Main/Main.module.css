@@ -59,3 +59,9 @@ border: none;
   font-family: "Tajawal-Bold";
   color: white;
 }
+
+.diver{
+  overflow-y: hidden;
+  overflow-x: scroll;
+  touch-action:pan-x;
+}
