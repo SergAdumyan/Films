@@ -1,16 +1,37 @@
 .menuBlockIcons{
-    margin-top: 200px;
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 10px;
+    
 }
 .menuBlockIcons>a>img{
     width: 30px;
     height: 30px;
 }
 .menuBlockIcons>a{
-    margin: 0 auto;
-    padding: 20px;
+    transition: 1s;
+    font-family: "Tajawal-Regular";
+    font-size: 36px;
+    text-decoration: none;
+    color: white;
     border-radius: 50%;
-    background-color: #3B486D;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 40px;
+    width: 50%;
+    height: 50px;  
+
 }
+
+.word{
+    visibility: hidden;
+}
+.titleIcons{
+    
+    visibility: visible;
+}
+

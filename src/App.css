@@ -1,6 +1,60 @@
-.menu{
+.menu {
+  position: fixed;
   height: 100%;
-  width: 10%;
-  padding: 0 50px;
-  border: 1px solid white;
+  padding: 0 30px;
+  width: 8%;
+  z-index: 5;
+  transition: 0.8s ease-in-out;
+}
+.menu:hover {
+  width: 30%;
+}
+
+.active {  
+  background-color: #3b486d;
+  font-family: "Tajawal-Bold";
+}
+
+
+.forShadow {
+  position: fixed;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  );
+  z-index: 3;
+
+  animation: showShadow .7s ease-in-out;
+  animation-fill-mode: forwards;
+}
+.closeShadow {
+  position: fixed;
+  height: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)
+  );
+  z-index: 3;
+  animation: close .7s alternate ease-in-out;
+}
+
+@keyframes showShadow {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes close {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
 }

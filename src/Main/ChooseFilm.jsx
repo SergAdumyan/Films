@@ -7,16 +7,16 @@ export default function ChooseFilm() {
     const dispatch = useDispatch()
 
   return (
-    <div style={{display:'flex',gap:'10px'}}>
+    <div style={{display:'flex',gap:'15px',overflow:'hidden'}}>
         {arr[1].map((elem)=>(
-            <>
+            
             <div key={elem.Id} onClick={()=>dispatch({
               type:'choose',
               payload:elem
             })}>
                 <img src={elem.CoverImage} alt=""/>
             </div>
-            </>
+            
         ))}
     </div>
   )

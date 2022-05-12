@@ -4,7 +4,8 @@ import Menu from './Menu';
 
 function App() {
   return (
-   <div style={{display:'flex'}}>
+   <div style={{width:'100%',height:'100%'}}>
+     
    <Menu/>
    <Main/>
    </div>
